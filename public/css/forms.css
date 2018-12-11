@@ -16,5 +16,5 @@
 }
 
 .form-control input:focus {
-    outline-color: var(--main);
+    outline-color: var(--accent);
 }
