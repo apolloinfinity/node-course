@@ -15,7 +15,7 @@
 }
 
 .form-control input {
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--main);
     font: inherit;
     border-radius: 2px;
 }
