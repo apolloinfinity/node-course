@@ -1,1 +1,16 @@
-[{"title":"Clean Code","imageUrl":"https://miro.medium.com/max/638/1*fdLTmU3gE40EtRNROkkaFg.jpeg","description":"A book about Agile Software Development","price":"39.99"}]
+[
+	{
+		"id": "12345",
+		"title": "Clean Code",
+		"imageUrl": "https://miro.medium.com/max/638/1*fdLTmU3gE40EtRNROkkaFg.jpeg",
+		"description": "A book about Agile Software Development",
+		"price": "39.99"
+	},
+	{
+		"title": "Automate The Boring Stuff with Python",
+		"imageUrl": "https://automatetheboringstuff.com/images/automate_2e_cover.png",
+		"description": "A book on how to automate everyday tasks with Python.",
+		"price": "21.00",
+		"id": "0.05620470786337606"
+	}
+]
