@@ -17,12 +17,12 @@ exports.postAddProduct = (req, res, next) => {
 	product.save();
 	res.redirect('/');
 };
+
 exports.getEditProduct = (req, res, next) => {
 	const editMode = req.query.edit;
 	if (!editMode) {
 		return res.redirect('/');
 	}
-
 	const prodId = req.params.productId;
 	Product.findById(prodId, (product) => {
 		if (!product) {
@@ -38,11 +38,15 @@ exports.getEditProduct = (req, res, next) => {
 };
 
 exports.postEditProduct = (req, res, next) => {
+	console.log(req.body);
 	const prodId = req.body.productId;
 	const updatedTitle = req.body.title;
-	const updatedPrice = req.body.price;
 	const updatedImageUrl = req.body.imageUrl;
+	const updatedPrice = req.body.price;
 	const updatedDesc = req.body.description;
+	const updatedProduct = new Product(prodId, updatedTitle, updatedImageUrl, updatedDesc, updatedPrice);
+	updatedProduct.save();
+	res.redirect('/admin/products');
 };
 
 exports.getProducts = (req, res, next) => {

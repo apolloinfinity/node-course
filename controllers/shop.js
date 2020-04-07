@@ -20,7 +20,6 @@ exports.getProduct = (req, res, next) => {
 			path: '/products'
 		});
 	});
-	// res.redirect('/');
 };
 
 exports.getIndex = (req, res, next) => {
@@ -49,9 +48,9 @@ exports.postCart = (req, res, next) => {
 };
 
 exports.getOrders = (req, res, next) => {
-	res.render('shop/cart', {
-		path: '/cart',
-		pageTitle: 'Your Cart'
+	res.render('shop/orders', {
+		path: '/orders',
+		pageTitle: 'Your Orders'
 	});
 };
 

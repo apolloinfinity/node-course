@@ -27,9 +27,9 @@ module.exports = class Product {
 		this.id = Math.random().toString();
 		getProductsFromFile((products) => {
 			if (this.id) {
-				const existingProduct = product.findIndex((prod = prod.id === this.id));
+				const existingProductIndex = products.findIndex((prod) => prod.id === this.id);
 				const updatedProducts = [ ...products ];
-				updatedProducts[existingProduct] = this;
+				updatedProducts[existingProductIndex] = this;
 				fs.writeFile(p, JSON.stringify(updatedProducts), (err) => {
 					console.log(err);
 				});
@@ -42,7 +42,6 @@ module.exports = class Product {
 			}
 		});
 	}
-
 	static fetchAll (cb) {
 		getProductsFromFile(cb);
 	}
