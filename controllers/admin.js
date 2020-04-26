@@ -38,11 +38,10 @@ exports.getEditProduct = (req, res, next) => {
 };
 
 exports.postEditProduct = (req, res, next) => {
-	console.log(req.body);
 	const prodId = req.body.productId;
 	const updatedTitle = req.body.title;
-	const updatedImageUrl = req.body.imageUrl;
 	const updatedPrice = req.body.price;
+	const updatedImageUrl = req.body.imageUrl;
 	const updatedDesc = req.body.description;
 	const updatedProduct = new Product(prodId, updatedTitle, updatedImageUrl, updatedDesc, updatedPrice);
 	updatedProduct.save();
@@ -57,4 +56,10 @@ exports.getProducts = (req, res, next) => {
 			path: '/admin/products'
 		});
 	});
+};
+
+exports.postDeleteProduct = (req, res, next) => {
+	const prodId = req.body.productId;
+	Product.deleteById(prodId);
+	res.redirect('/admin/products');
 };
