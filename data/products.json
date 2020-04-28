@@ -1,1 +1,30 @@
-[{"id":"12345","title":"Clean Code","imageUrl":"https://miro.medium.com/max/638/1*fdLTmU3gE40EtRNROkkaFg.jpeg","description":"A book about Agile Software Development. It makes you a superhero in the software world!","price":"40.99"},{"title":"Automate The Boring Stuff with Python","imageUrl":"https://automatetheboringstuff.com/images/automate_2e_cover.png","description":"A book on how to automate everyday tasks with Python.","price":"21.00","id":"0.05620470786337606"},{"id":"123245","title":"A Book","imageUrl":"https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg","description":"This is an awesome book!","price":"19"},{"id":"0.41607315815753076","title":"fasfd","imageUrl":"fdasfs","description":"fadsfads","price":"12"}]
+[
+  {
+    "id": "12345",
+    "title": "Clean Code",
+    "imageUrl": "https://miro.medium.com/max/638/1*fdLTmU3gE40EtRNROkkaFg.jpeg",
+    "description": "A book about Agile Software Development. It makes you a superhero in the software world!",
+    "price": "40.99"
+  },
+  {
+    "title": "Automate The Boring Stuff with Python",
+    "imageUrl": "https://automatetheboringstuff.com/images/automate_2e_cover.png",
+    "description": "A book on how to automate everyday tasks with Python.",
+    "price": "21.00",
+    "id": "0.05620470786337606"
+  },
+  {
+    "id": "123245",
+    "title": "A Book",
+    "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
+    "description": "This is an awesome book!",
+    "price": "19"
+  },
+  {
+    "id": "0.41607315815753076",
+    "title": "fasfd",
+    "imageUrl": "fdasfs",
+    "description": "fadsfads",
+    "price": "12"
+  }
+]
